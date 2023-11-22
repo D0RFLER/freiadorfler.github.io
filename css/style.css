@@ -1,0 +1,267 @@
+/*-----------------------------------
+
+MAIN FARVE-SKEMA 
+
+    $Base:#ECEDDF; //BG
+    $Orange-One:#F2A25C; // Accent 1
+    $Orange-Two:#BF4215; // Accent (fade)
+    $Orange-Three:#8C0303; // Accent 2
+    $Orange-Four:#260101; //Tekst
+
+
+Buttons FARVE-SKEMA
+    $button-bg: #CBCCC0;
+    $button-border: #A69180;
+    $button-tekst: #460107;
+
+
+Det andet systen crashed helt for mig, så har bare impoteret farverne ind for at have dem :>
+
+------------------------------------*/
+
+
+/*--- HEADER ---------------------------------------------------------------------------------------------------*/
+body {
+    background-color: #ECEDDF; 
+    margin: 0;
+    padding: 0;
+    font-family:  'Bebas Neue', sans-serif; /*Headline Font*/
+}
+
+header {
+    color: #260101; /*Husk farve til al' tekst :> */
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 1.5em;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+nav li {
+    margin-right: 20px; /* Mellemrum mellem CONTACT og ABOUT */
+}
+
+nav a {
+    text-decoration: none;
+    color: #260101; /* Tekst farve før hover */
+    font-size: 16px;
+}
+
+nav a:hover {
+    color: #BF4215; /* Hover Tekst Farve */
+}
+
+/*--- OVERBLIK ---------------------------------------------------------------------------------------------------*/
+.overblik {
+    margin-top: 50px; /*Skubber det lidt ned fra menuen*/
+
+    display: flex;
+    justify-content: center; /*Holder det fast i midten - aka, don't touch*/
+
+    margin-bottom: 125px; /*Skubber den næste lidt ned*/
+}
+
+.overblik-illu {
+    padding-left: 100px; /*Mellemrum mellem liste og billede*/
+
+    /*Kunne være fedt at gøre det til et slideshow (?) - kræver bare flere ting lmao */
+}
+
+.overblik-tekst {
+    text-decoration: none;
+    list-style: none; /*Fjerne dimser*/
+
+    padding-top: 210px; /*Skubber den i midten ... Findes nok en bedre metode lmao*/
+
+    font-size: 100px; 
+    color: #260101;
+}
+
+li a {
+    text-decoration: none;
+    color: #260101 /* Tekst farve før hover */
+}
+
+li a:hover {
+    color: #BF4215; /* Hover Tekst Farve */
+    transition: 0.05s;
+}
+
+/*--- ILLUSTRATIONS ---------------------------------------------------------------------------------------------------*/
+
+.illu-afdeling {
+
+    margin-top: 50px; 
+
+    display: flex;
+    justify-content: center; 
+
+    margin-bottom: 125px; 
+
+}
+
+.illu-tekst {
+
+    justify-content: left;
+    width: 500px;
+
+}
+
+.illu-overskrift {
+    font-size: 100px; /*Same shit - different place (and name)*/
+    font-family: 'Bebas Neue', sans-serif;
+    color: #260101;
+    list-style: none;
+}
+
+.illu-illu {
+    
+    padding-right: 100px; /*Mellemrum mellem liste og billede*/
+
+}
+
+p {
+    font-size: 25px;
+    font-family:'Barlow Condensed', sans-serif;
+}
+
+/*--- BRANDING ---------------------------------------------------------------------------------------------------*/
+
+.branding-afdelling {
+
+    margin-top: 125px;
+    margin-bottom: 125px;
+
+    display: flex;
+    justify-content: center; 
+
+}
+
+.branding-overskrift {
+
+    font-size: 100px;
+    font-family: 'Bebas Neue', sans-serif;
+    color: #260101;
+    list-style: none;
+    margin-right: 20px;
+
+}
+
+.branding-illu {
+
+    margin-left: 20px;
+    /*float: right;*/
+}
+
+
+.branding-illu img {
+    max-width: 100%; /* Holder billede i sin boks :> */
+}
+
+.branding-tekst {
+    width: 500px;
+    /*float: left;*/
+}
+
+/*--- CONCEPT ---------------------------------------------------------------------------------------------------*/
+
+.concept-afdelling {
+
+    margin-top: 125px;
+    margin-bottom: 125px;
+    
+    justify-content: center; 
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.concept-overskrift {
+
+    font-size: 100px;
+    font-family: 'Bebas Neue', sans-serif;
+    color: #260101;
+    list-style: none;
+
+    align-items: center;
+    justify-content: center; 
+
+}
+
+.concept-broed {
+
+    display: flex;
+    justify-content: center; 
+
+}
+
+.info-1 {
+
+    width: 1000px; /*Boks-kontrol ... Eller noget*/
+
+    padding-left: 75px; /*Danner mellemrum :> */
+}
+
+.info-2 {
+
+    width: 1000px;
+    
+    padding-right: 75px; /*Danner mellemrum :> */
+}
+
+
+/*--- PERSONAL TIHIHI---------------------------------------------------------------------------------------------------*/
+
+.per-afdelling {
+
+    margin-top: 225px;
+    margin-bottom: 125px;
+
+    display: flex;
+    justify-content: center; 
+
+
+}
+
+.per-overskrift {
+
+    font-size: 100px;
+    font-family: 'Bebas Neue', sans-serif;
+    color: #260101;
+    list-style: none;
+
+}
+
+.per-tekst {
+
+    width: 1000px;
+
+}
+
+.per-img {
+
+padding-right: 100px;
+
+}
+
+
+/*--- ~(^^~) ROW DECOR (~^^)~ ---------------------------------------------------------------------------------------------------*/
+
+.row-1, .row-2, .row-3, .row-4, .row-5 {
+
+    border-top: 1px solid #F2A25C; /* Adskildningstrejer (helt klart et ord :>) */
+
+}
+
+
