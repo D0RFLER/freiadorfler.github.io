@@ -266,4 +266,20 @@ padding-right: 100px;
 
 }
 
+/*--- STOERRELSE FIX (?) ---------------------------------------------------------------------------------------------------*/
 
+@media only screen and (min-width: 601px) and (max-width: 1024px) {
+
+}
+
+@media only screen and (max-width: 600px) {
+    
+
+}
+
+
+@media only screen and (min-width: 1025px) {
+
+}
+
+/*Gav high-key op da det ikke ville gøre hvad jeg ville lige meget hvad... Så den virker på en stor skærm og ikke videreligt godt på telefon eller mindre skærme :>*/
