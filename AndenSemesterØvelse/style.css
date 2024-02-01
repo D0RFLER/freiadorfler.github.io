@@ -1,0 +1,10 @@
+:root {
+    --color-primary: #499ca5; 
+}
+
+Body {
+
+background-color: var(--color-primary); 
+/* Giver baggrunden besked om at den skal være farven på color-pickeren */
+/* Var er forkortelse for "variable" */
+}
