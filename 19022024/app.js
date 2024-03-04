@@ -132,85 +132,86 @@ myArray.forEach(item=> {
 
 // {
 // //Dette er en måde at sætte info op for et klassisk produkt kort :)
-// tittle:"Product 1",
+// category: "Random stuff"   
+//     }
+// ]; //Dette er en klassiske stryktur for næsten alt online. Så dette kunne være et produkt - hvis 
+// //man vil have flere laver man et komma bag } og sætter det næste produkt ind. 
+
+// // products.forEach(product => {
+// //     console.log(product.tittle)
+// // })
+// //I ens browser burde man kunne se dybre information omkring produktet i consolen.
+
+// myArray.forEach(item=> {
+//     console.log(`Title: ${product.tittle} - Price: ${product.price}`);
+// }); //Metode så man an se vigtig info gennem consolen.
+
+// //HEr skal vi fortælle Java Script at vi vil have HTML card lavet. De vil være grimme pga der mangler 
+// //css... Det kan findes på Kristians GitHub.
+
+// const createCard = (product) => {
+//     return `
+//     <div class="card">
+//         <h4>${product.tittle}</h4>
+//         <h2>${product.description}</h2>
+//             <img src="${product.image}" alt="${product.tittle}">
+//         <p>Price: £${product.price}</p>
+//         <p>Category: ${product.category}</p>
+//     </div>
+//     `; //Alt HTML skal skrives mellem de to `
+//     //Alt skal være i samme kategori. Så hvis man har brugt item i stedet for, skal det gså stå over. 
+// }; 
+
+// // products.forEach(product => {
+// //     console.log(createCard(product))
+// //     //Man skal placere hvert produkt ind i create card for at få dem til at lave HTML kort.
+// // }); 
+
+// const productContainer = document.querySelector('.row'); 
+// //Her bliver systemet fortalt den skal snakke med HTML row'en.
+
+// products.forEach(product => {
+
+//     productContainer.innerHTML += createCard(product);
+//     //Her bliver der fortalt at den skal tilføje et nyt kort til row'en.
+
+// });
+
+// //___________ KATEGORIER PÅ PRODUKTER / filtering _____________________________________________________
+
+// const filterProducts = products.filter(product => product.category == "Random stuff");
+// //Her bliver der lavet en filter funktion. Denne funktion vil filtrere alle produkterne og kun vise dem
+//     console.log(filterProducts);
+
+//     filterProducts.forEach(product => {
+//         productContainer.innerHTML += createCard(product)
+//     });
+
+// // Hvis man ønsker at have ting uunder flere kategorier, så skal man sætt ederes kategori som en array.// tittle:"Product 1",
 // description:  "This is the descriprion of product 1",
 // image: "img1.jpg",
 // price: 19.99,
 // category: "Random stuff"
 // }
 
-const products = [
-    {
-tittle:"Product 1",
-description:  "This is the descriprion of product 1",
-image: "img1.jpg",
-price: 19.99,
-category: "Random stuff"
-}, 
-    {
-tittle:"Product 2",
-description:  "This is the descriprion of product 1",
-image: "img1.jpg",
-price: 59.99,
-category: "Stuff for the kitchen"},
-    {
-tittle:"Product 3",
-description:  "This is the descriprion of product 1",
-image: "img1.jpg",
-price: 9.99,
-category: "Random stuff"   
-    }
-]; //Dette er en klassiske stryktur for næsten alt online. Så dette kunne være et produkt - hvis 
-//man vil have flere laver man et komma bag } og sætter det næste produkt ind. 
+// const products = [
+//     {
+// tittle:"Product 1",
+// description:  "This is the descriprion of product 1",
+// image: "img1.jpg",
+// price: 19.99,
+// category: "Random stuff"
+// }, 
+//     {
+// tittle:"Product 2",
+// description:  "This is the descriprion of product 1",
+// image: "img1.jpg",
+// price: 59.99,
+// category: "Stuff for the kitchen"},
+//     {
+// tittle:"Product 3",
+// description:  "This is the descriprion of product 1",
+// image: "img1.jpg",
+// price: 9.99,}
 
-// products.forEach(product => {
-//     console.log(product.tittle)
-// })
-//I ens browser burde man kunne se dybre information omkring produktet i consolen.
-
-myArray.forEach(item=> {
-    console.log(`Title: ${product.tittle} - Price: ${product.price}`);
-}); //Metode så man an se vigtig info gennem consolen.
-
-//HEr skal vi fortælle Java Script at vi vil have HTML card lavet. De vil være grimme pga der mangler 
-//css... Det kan findes på Kristians GitHub.
-
-const createCard = (product) => {
-    return `
-    <div class="card">
-        <h4>${product.tittle}</h4>
-        <h2>${product.description}</h2>
-            <img src="${product.image}" alt="${product.tittle}">
-        <p>Price: £${product.price}</p>
-        <p>Category: ${product.category}</p>
-    </div>
-    `; //Alt HTML skal skrives mellem de to `
-    //Alt skal være i samme kategori. Så hvis man har brugt item i stedet for, skal det gså stå over. 
-}; 
-
-// products.forEach(product => {
-//     console.log(createCard(product))
-//     //Man skal placere hvert produkt ind i create card for at få dem til at lave HTML kort.
-// }); 
-
-const productContainer = document.querySelector('.row'); 
-//Her bliver systemet fortalt den skal snakke med HTML row'en.
-
-products.forEach(product => {
-
-    productContainer.innerHTML += createCard(product);
-    //Her bliver der fortalt at den skal tilføje et nyt kort til row'en.
-
-});
-
-//___________ KATEGORIER PÅ PRODUKTER / filtering _____________________________________________________
-
-const filterProducts = products.filter(product => product.category == "Random stuff");
-//Her bliver der lavet en filter funktion. Denne funktion vil filtrere alle produkterne og kun vise dem
-    console.log(filterProducts);
-
-    filterProducts.forEach(product => {
-        productContainer.innerHTML += createCard(product)
-    });
-
-// Hvis man ønsker at have ting uunder flere kategorier, så skal man sætt ederes kategori som en array.
+// _______ 29. 02. 2022 _____________________________________________________________________________________
